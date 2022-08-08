@@ -1,0 +1,22 @@
+{
+  "name": "rock-apper",
+  "version": "1.0.0",
+  "description": "game",
+  "main": "pseudo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ultorem/rock-paper-scissors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ultorem/rock-paper-scissors/issues"
+  },
+  "homepage": "https://github.com/Ultorem/rock-paper-scissors#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  }
+}
