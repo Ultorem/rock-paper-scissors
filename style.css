@@ -103,3 +103,10 @@ h3{
     width: 1200px;
     height: 600px;
 }
+
+#mainMenuButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
