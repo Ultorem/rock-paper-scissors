@@ -11,49 +11,53 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>hello</h1>
+    <h1>Let's battle</h1>
 
-    <button class="button" id="initPlay" onclick="">Play Rock Paper Scissors</button>
     <br>
     <br>
-    <div id="statsArea">
-        <div id=""></div>
-        <p id="playerStats">0</p>
-        <p>Player Stats: </p>
-    </div>
-    <br>
-    <br>
+    <div id="containerArena">
+        <div id="playerCorner">
+            <div id=""></div>
+            <p>Player Stats: </p>
+            <p id="playerStats">0</p>
+        </div>
+        <br>
+        <br>
         <div id="gameArea">
             <p id="gameMessagePlayer">Get ready for the next battle!</p>
-            <p id="gameMessage></p>
+            <p id="gameMessage">..</p>
             <p id="gameMessageCPU">...</p>
         </div>
-    <br>
-    <br>
-    <div id="">
-        <p>CPU stats:</p>
-        <p id="cpuStats">0</p>
+        <br>
+        <br>
+        <div id="cpuCorner">
+            <p>CPU stats:</p>
+            <p id="cpuStats">0</p>
+        </div>
+        <div id="gameArea">
+            <div id="playerChoice"></div>
+            <div id="cpuChoice"></div>
+        </div>
     </div>
-    <div id="gameArea">
-        <div id="playerChoice"></div>
-        <div id="cpuChoice"></div>
-    </div>
     <br>
+    <div id="buttonArea">
     <button class="button" id="rockButton" onclick="rockButton()">Rock</button>
     <button class="button" id="paperButton" onclick="paperButton()">Paper</button>
     <button class="button" id="scissorButton" onclick="scissorButton()">Scissors</button>
+    </div>
     <br>
     <br>
     <div id="roundCountArea">
-        <p id="">Round: <div id="roundCounter">0</div>
+        <p id="">Round: <p id="roundCounter">0</p>
         </p>
     </div>
 
-    <audio controls autoplay><source src="song.mp4" type="audio/mpeg"></audio>    
+    <audio controls autoplay>
+        <source src="song.mp4" type="audio/mpeg"></audio>
 
     <script src="app.js" async defer></script>
 </body>

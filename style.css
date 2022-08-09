@@ -1,0 +1,65 @@
+#gameArea {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+}
+
+#playerCorner {
+    background-color: rgb(33, 226, 33);
+}
+
+#cpuCorner {
+    background-color: rgb(189, 18, 18);
+
+}
+
+#containerArena {
+    flex-direction: column;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+body {
+    margin-left: 33%;
+    margin-right: 33%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    background-color: rgb(173, 210, 240);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+button{
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: stretch
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    }
+
+    #buttonArea {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
