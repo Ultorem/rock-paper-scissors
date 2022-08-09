@@ -16,15 +16,15 @@
     flex-direction: column;
     display: flex;
     justify-content: space-evenly;
-    width: 1500px;
-    height: 800px;
+    width: 1200px;
+    height: 600px;
 }
 
 body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 300px;
     margin-bottom: 10%;
     background-color: rgb(173, 210, 240);
 }
@@ -75,4 +75,31 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+#mainMenuButton {
+    width: 200px;
+    margin-right: 20px;
+    height: 100px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10%;
+    font-size: 40px;
+}
+
+h3{
+    display: flex;
+    justify-content: right;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(0, 0, 0);
+}
+
+#menuArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1200px;
+    height: 600px;
 }
