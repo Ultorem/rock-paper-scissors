@@ -5,12 +5,15 @@ let randomNumber;
 let round = 0;
 let userWinCount = 0;
 let cpuWinCount = 0;
+let roundMessagePlayer;
+let roundMessageCPU;
 
 function rounds () {
     round++;
     console.log(round);
     document.getElementById("roundCounter").innerHTML = round;
 }
+
 
 //logs cpu wins and displays it in index.html
 function cpuWins () {
@@ -34,29 +37,38 @@ function playerWins () {
 //  function plays rockButton
 function rockButton () {
     console.log("user played rock");
+    roundMessagePlayer = ("user played rock");
     computerChoice();
     userNum = 0;
     determineWinner();
     rounds();
+    document.getElementById("gameMessagePlayer").innerHTML = roundMessagePlayer;
+    document.getElementById("gameMessageCPU").innerHTML = roundMessageCPU;
 }
 
 //  function plays paperButton
 function paperButton () {
     console.log("user played paper");
+    roundMessagePlayer = ("user played paper");
     computerChoice();
     userNum = 1;
     determineWinner();
     rounds();
+    document.getElementById("gameMessagePlayer").innerHTML = roundMessagePlayer;
+    document.getElementById("gameMessageCPU").innerHTML = roundMessageCPU;
 
 }
 
 // function plays scissorButton
 function scissorButton () {
     console.log("user played scissor");
+    roundMessagePlayer = ("user played scissor");
     computerChoice();
     userNum = 2;
     determineWinner();
     rounds();
+    document.getElementById("gameMessagePlayer").innerHTML = roundMessagePlayer;
+    document.getElementById("gameMessageCPU").innerHTML = roundMessageCPU;
 }
 
 // function with random number 0-2, returns rock, paper, or scissors
@@ -67,15 +79,19 @@ function computerChoice () {
     if (randomNumber === 0) {
         return "rock",
         cpuNum = 0,
-        console.log("cpu played Dwayne the rock johnson");
+        console.log("cpu played Dwayne the rock johnson"),
+        roundMessageCPU = ("CPU played rock");
     } else if (randomNumber === 1) {
         return "paper",
         cpuNum = 1,
-        console.log("cpu submitted paperwork, bring yor katana");
+        console.log("cpu submitted paperwork, bring yor katana"),
+        roundMessageCPU = ("CPU played paper");
+
     } else {
         return "scissors",
         cpuNum = 2,
-        console.log("cpu is throwing scissors, take cover!");
+        console.log("cpu is throwing scissors, take cover!"),
+        roundMessageCPU = ("CPU played scissors");
     }
     
 }
